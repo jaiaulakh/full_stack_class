@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaideep Singh - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: black;;
+        }
+
+        header {
+            background: rgb(214, 102, 102);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #ecf0f1;
+        }
+
+        nav {
+            background: rgb(214, 102, 102);;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+
+        nav a:hover {
+            background: #2c3e50;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-content {
+            margin-bottom: 2rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .project {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .project .tech-stack {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .project ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .project li {
+            margin-bottom: 0.3rem;
+        }
+
+        .education {
+            background: #f4f4f4;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .education h3 {
+            color: #2c3e50;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jaideep Singh</h1>
+        <p>Computer Science & Engineering Student | Software Developer</p>
+        <p>Mohali, Punjab, India</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm Jaideep Singh, a Computer Science & Engineering student at Chandigarh University with a CGPA of 8.8/10.0. I'm passionate about building scalable software systems and solving complex algorithmic problems.</p>
+            <p style="margin-top: 1rem;">I have hands-on experience in machine learning, database systems, and embedded systems. Currently preparing for software engineering internships with a focus on data structures, algorithms, and system design.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <p>C++ (Advanced – DSA), Python, Java, JavaScript</p>
+            </div>
+            <div class="skill-category">
+                <h3>Core CS Fundamentals</h3>
+                <p>Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks</p>
+            </div>
+            <div class="skill-category">
+                <h3>Development & Tools</h3>
+                <p>Git, GitHub, Google Colab, VS Code, JetBrains IDEs, REST APIs</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <h3>Fake News Detection System</h3>
+            <p class="tech-stack">Python, LSTM, NLP, Gradio</p>
+            <ul>
+                <li>Implemented end-to-end NLP pipeline including text preprocessing, tokenization, and sequence modeling</li>
+                <li>Built LSTM-based deep learning classifier to distinguish between real and fake news articles</li>
+                <li>Deployed interactive web interface using Gradio for real-time news authenticity prediction</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Train Reservation System</h3>
+            <p class="tech-stack">DBMS, SQL, Python</p>
+            <ul>
+                <li>Designed and implemented relational database schema for comprehensive train reservation management</li>
+                <li>Built seat allocation engine with booking logic, ticket generation, and cancellation handling</li>
+                <li>Applied query optimization techniques and indexing strategies to improve database performance</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Phishing Website Detection Tool</h3>
+            <p class="tech-stack">Python, Machine Learning</p>
+            <ul>
+                <li>Developed URL analysis system to identify phishing patterns through feature extraction</li>
+                <li>Implemented rule-based classification combined with machine learning techniques</li>
+                <li>Engineered feature extraction pipeline analyzing URL structure and webpage attributes</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Smart Intrusion Counter System</h3>
+            <p class="tech-stack">ESP32, PIR Sensors, Embedded C</p>
+            <ul>
+                <li>Built real-time intrusion counting system using ESP32 microcontroller and PIR motion sensors</li>
+                <li>Implemented logical control circuits using flip-flops for accurate count tracking</li>
+                <li>Developed display interface for real-time monitoring and historical data visualization</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education">
+            <h3>Chandigarh University</h3>
+            <p><strong>Bachelor of Engineering in Computer Science & Engineering</strong></p>
+            <p>Expected Graduation: June 2028 | CGPA: 8.8/10.0</p>
+            <p style="margin-top: 0.5rem;"><em>Relevant Coursework:</em> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Fundamentals of Analog & Digital Electronics, Semiconductor Devices</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating or discussing opportunities? Feel free to reach out!</p>
+        <div class="contact-info">
+            <p>Location: Mohali, Punjab, India</p>
+            <p>Currently preparing for software engineering internships</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jaideep Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
