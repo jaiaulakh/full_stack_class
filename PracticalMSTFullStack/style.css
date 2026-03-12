@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#taskInput::placeholder {
+    color: #888;
+}
+
+#prioritySelect {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#prioritySelect option {
+    background-color: #000;
+    color: #fff;
+}
+
+#addBtn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background-color: #333;
+}
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #333;
+}
+
+.filter-btn.active {
+    background-color: #333;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#taskList li.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.task-left input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #fff;
+}
+
+.delete-btn {
+    padding: 6px 16px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #333;
+}
